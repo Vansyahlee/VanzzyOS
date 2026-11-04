@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="56dp" android:background="@color/background"
+        app:navigationIcon="@drawable/ic_back" app:title="About Owner" app:titleTextColor="@color/ink" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="24dp" android:gravity="center_horizontal">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp"
+                android:src="@drawable/ic_vanzzy_logo" android:contentDescription="Vanzzy Haven" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgOwner" android:layout_width="164dp" android:layout_height="164dp"
+                android:layout_marginTop="22dp" android:scaleType="centerCrop" android:src="@drawable/vansyah"
+                android:contentDescription="Foto pemilik usaha" app:shapeAppearanceOverlay="@style/CircleImage" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Rivansyah Zulfa Nurjaya" android:layout_marginTop="16dp" android:gravity="center"
+                android:textStyle="bold" android:textSize="24sp" android:textColor="@color/ink" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Owner &amp; App Creator · Vanzzy Haven" android:layout_marginTop="6dp" android:gravity="center"
+                android:textSize="13sp" android:textColor="@color/teal" />
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp"
+                app:cardBackgroundColor="@color/white" app:cardCornerRadius="20dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="22dp"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Tentang Vanzzy Haven" android:textStyle="bold" android:textColor="@color/ink" android:textSize="19sp" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                        android:text="Vanzzy Haven adalah konsep usaha hunian kost yang memudahkan pencarian kamar, melihat fasilitas, dan mengajukan pemesanan dalam satu aplikasi. Saya mengembangkan aplikasi ini untuk menghadirkan pengalaman mencari tempat tinggal yang lebih praktis dan nyaman."
+                        android:lineSpacingExtra="4dp" android:textSize="14sp" android:textColor="@color/soft_ink" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Kontak Owner" android:textColor="@color/ink" android:textStyle="bold"
+                android:textSize="19sp" android:layout_marginTop="28dp" android:layout_marginBottom="8dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnEmail" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="✉  Email pemilik usaha" android:layout_marginTop="6dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnInstagram" style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Instagram · @rvnsyhzn" android:layout_marginTop="7dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnTiktok" style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TikTok · @vanszn05" android:layout_marginTop="7dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"
+                android:gravity="center" android:text="Vanzzy Haven · Katalog sedang dikembangkan"
+                android:textColor="@color/soft_ink" android:textSize="11sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

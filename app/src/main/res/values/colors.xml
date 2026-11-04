@@ -1,0 +1,12 @@
+<resources>
+    <color name="background">#F7F8F5</color>
+    <color name="ink">#15352F</color>
+    <color name="soft_ink">#5C716D</color>
+    <color name="teal">#146E61</color>
+    <color name="teal_dark">#0D4F47</color>
+    <color name="mint">#E1F3EC</color>
+    <color name="outline">#DDE7E2</color>
+    <color name="warm">#FFF4DB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

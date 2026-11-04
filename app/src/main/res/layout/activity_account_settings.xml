@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background" android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="56dp" android:background="@color/background"
+        app:navigationIcon="@drawable/ic_back" app:title="Pengaturan Akun" app:titleTextColor="@color/ink" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="24dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <ImageView android:layout_width="52dp" android:layout_height="52dp" android:src="@drawable/ic_vanzzy_logo"
+                    android:contentDescription="Logo Vanzzy Haven" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Akun Vanzzy Haven"
+                        android:textColor="@color/ink" android:textSize="21sp" android:textStyle="bold" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Data pribadi hanya bisa diubah oleh akun yang sedang login."
+                        android:textSize="12sp" android:textColor="@color/soft_ink" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@+id/tvStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="" android:textColor="@color/teal_dark" android:textSize="13sp" android:layout_marginTop="18dp" />
+            <LinearLayout android:id="@+id/authSection" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_marginTop="28dp">
+                <TextView android:id="@+id/tvAuthMode" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Masuk ke akunmu" android:textColor="@color/ink" android:textSize="22sp" android:textStyle="bold" />
+                <LinearLayout android:id="@+id/registerFields" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:visibility="gone">
+                    <EditText android:id="@+id/etRegisterName" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp" android:background="@drawable/bg_input" android:hint="Nama lengkap"
+                        android:inputType="textPersonName" android:singleLine="true" android:textSize="15sp" />
+                    <EditText android:id="@+id/etRegisterPhone" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp" android:background="@drawable/bg_input" android:hint="Nomor HP"
+                        android:inputType="phone" android:singleLine="true" android:textSize="15sp" />
+                </LinearLayout>
+                <EditText android:id="@+id/etLoginEmail" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" android:background="@drawable/bg_input" android:hint="Email"
+                    android:inputType="textEmailAddress" android:singleLine="true" android:textSize="15sp" />
+                <EditText android:id="@+id/etLoginPassword" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" android:background="@drawable/bg_input" android:hint="Password (min. 10 karakter saat daftar)"
+                    android:inputType="textPassword" android:singleLine="true" android:textSize="15sp" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnLogin"
+                    android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="18dp"
+                    android:text="Masuk" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnSwitchMode"
+                    style="@style/Widget.Material3.Button.TextButton" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Belum punya akun? Daftar" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/profileSection" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:visibility="gone" android:layout_marginTop="26dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Profil pengguna"
+                    android:textColor="@color/ink" android:textSize="22sp" android:textStyle="bold" />
+                <EditText android:id="@+id/etName" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp" android:background="@drawable/bg_input" android:hint="Nama"
+                    android:inputType="textPersonName" android:singleLine="true" android:textSize="15sp" />
+                <EditText android:id="@+id/etEmail" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp" android:background="@drawable/bg_input" android:hint="Email"
+                    android:inputType="textEmailAddress" android:singleLine="true" android:textSize="15sp" />
+                <EditText android:id="@+id/etPhone" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp" android:background="@drawable/bg_input" android:hint="Nomor HP"
+                    android:inputType="phone" android:singleLine="true" android:textSize="15sp" />
+                <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/switchNotifications"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp"
+                    android:text="Preferensi notifikasi pemesanan" android:textColor="@color/ink" android:checked="true" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnSaveProfile"
+                    android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="16dp"
+                    android:text="Simpan perubahan" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Keamanan Akun"
+                    android:layout_marginTop="32dp" android:textColor="@color/ink" android:textSize="19sp" android:textStyle="bold" />
+                <EditText android:id="@+id/etOldPassword" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp" android:background="@drawable/bg_input" android:hint="Password saat ini"
+                    android:inputType="textPassword" android:singleLine="true" android:textSize="15sp" />
+                <EditText android:id="@+id/etNewPassword" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp" android:background="@drawable/bg_input" android:hint="Password baru (min. 10 karakter)"
+                    android:inputType="textPassword" android:singleLine="true" android:textSize="15sp" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnChangePassword"
+                    style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent"
+                    android:layout_height="52dp" android:layout_marginTop="14dp" android:text="Ganti password" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnLogout"
+                    style="@style/Widget.Material3.Button.TextButton" android:layout_width="match_parent"
+                    android:layout_height="50dp" android:layout_marginTop="18dp" android:text="Keluar dari akun" />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"
+                android:text="Mode development lokal. Tidak untuk akun atau transaksi publik sebelum HTTPS, database dan keamanan produksi tersedia."
+                android:textSize="11sp" android:textColor="@color/soft_ink" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

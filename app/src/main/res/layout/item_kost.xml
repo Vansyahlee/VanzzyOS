@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp" app:cardCornerRadius="21dp"
+    app:cardElevation="0dp" app:strokeColor="@color/outline" app:strokeWidth="1dp"
+    app:cardBackgroundColor="@color/white">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView android:id="@+id/ivFotoKost" android:layout_width="match_parent" android:layout_height="170dp"
+            android:scaleType="centerCrop" android:contentDescription="Foto tempat kost" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="17dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:id="@+id/tvNamaKost" android:layout_width="0dp" android:layout_weight="1"
+                    android:layout_height="wrap_content" android:textSize="18sp" android:textStyle="bold" android:textColor="@color/ink" />
+                <TextView android:id="@+id/tvRatingKost" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="12sp" android:textColor="@color/ink" android:textStyle="bold" />
+            </LinearLayout>
+            <TextView android:id="@+id/tvAlamatKost" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" android:textSize="12sp" android:textColor="@color/soft_ink" android:maxLines="2" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:id="@+id/tvHargaKost" android:layout_width="0dp" android:layout_weight="1"
+                    android:layout_height="wrap_content" android:textColor="@color/teal" android:textStyle="bold" android:textSize="17sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:background="@drawable/bg_chip" android:paddingHorizontal="11dp" android:paddingVertical="7dp"
+                    android:text="Lihat kamar  →" android:textColor="@color/teal_dark" android:textStyle="bold" android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

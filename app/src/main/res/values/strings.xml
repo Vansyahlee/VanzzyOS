@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Vanzzy Haven</string>
+    <string name="label_fasilitas">Spesifikasi &amp; Fasilitas:</string>
+    <string name="btn_pesan_sekarang">Pesan Sekarang</string>
+    <string name="desc_foto_kost">Foto utama properti kost</string>
+    <string name="desc_rating_star">Ikon bintang rating</string>
+    <string name="desc_slider_image">Gambar slider fasilitas</string>
+    <string name="desc_lokasi_icon">Ikon penanda lokasi</string>
+</resources>

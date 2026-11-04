@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/background">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="56dp" android:background="@color/background"
+        app:navigationIcon="@android:drawable/ic_menu_revert" app:title="Detail kost" app:titleTextColor="@color/ink" />
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:orientation="vertical" android:paddingBottom="24dp">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="272dp" />
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayout" android:layout_width="wrap_content" android:layout_height="12dp"
+            android:layout_gravity="center" android:layout_marginTop="8dp"
+            app:tabBackground="@drawable/tab_selector" app:tabIndicatorHeight="0dp" app:tabMaxWidth="12dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:paddingHorizontal="22dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp"
+                android:text="PILIHAN HUNIAN" android:textSize="10sp" android:letterSpacing="0.14"
+                android:textColor="@color/teal" android:textStyle="bold" />
+            <TextView android:id="@+id/tvNamaDetail" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:textSize="26sp" android:textColor="@color/ink" android:textStyle="bold" />
+            <TextView android:id="@+id/tvAlamatDetail" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:textColor="@color/soft_ink" android:textSize="13sp" />
+            <TextView android:id="@+id/tvRatingDetail" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:textColor="@color/teal" android:textSize="12sp" android:textStyle="bold" />
+            <TextView android:id="@+id/tvDeskripsi" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="18dp" android:textColor="@color/soft_ink" android:textSize="14sp" android:lineSpacingExtra="5dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="25dp" android:text="Fasilitas kamar" android:textSize="18sp" android:textStyle="bold" android:textColor="@color/ink" />
+            <TextView android:id="@+id/tvFasilitasDetail" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:lineSpacingExtra="8dp" android:textSize="14sp" android:textColor="@color/ink" />
+            <TextView android:id="@+id/tvNotice" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="22dp" android:background="@color/warm" android:padding="12dp"
+                android:text="Informasi kost dan foto masih berupa data pengembangan, bukan penawaran sewa yang telah diverifikasi."
+                android:textSize="12sp" android:textColor="@color/ink" />
+        </LinearLayout>
+      </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal"
+        android:background="@color/white" android:padding="16dp" android:gravity="center_vertical">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:text="Mulai dari" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="11sp" android:textColor="@color/soft_ink" />
+            <TextView android:id="@+id/tvHargaDetail" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="16sp" android:textStyle="bold" android:textColor="@color/ink" />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnPesan" android:layout_width="wrap_content" android:layout_height="56dp"
+            android:text="Pesan kamar  →" app:cornerRadius="17dp" />
+    </LinearLayout>
+</LinearLayout>

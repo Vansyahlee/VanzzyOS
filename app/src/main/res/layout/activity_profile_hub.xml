@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="56dp"
+        android:background="@color/background" app:navigationIcon="@drawable/ic_back"
+        app:title="Profil" app:titleTextColor="@color/ink" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="22dp">
+            <ImageView android:layout_width="76dp" android:layout_height="76dp" android:src="@drawable/ic_vanzzy_logo"
+                android:contentDescription="Logo rumah Vanzzy Haven" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Vanzzy Haven"
+                android:textStyle="bold" android:textSize="29sp" android:textColor="@color/ink" android:layout_marginTop="12dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Tempat baru, cerita baru. Kelola informasi dan akunmu dari sini."
+                android:textSize="14sp" android:textColor="@color/soft_ink" android:layout_marginTop="6dp" />
+            <com.google.android.material.card.MaterialCardView android:id="@+id/cardOwner"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" android:clickable="true" android:focusable="true"
+                app:cardBackgroundColor="@color/white" app:cardCornerRadius="20dp" app:strokeColor="@color/outline" app:strokeWidth="1dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:padding="21dp" android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="01  ·  TENTANG BISNIS" android:letterSpacing="0.1" android:textStyle="bold"
+                        android:textSize="10sp" android:textColor="@color/teal" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="About Owner  →" android:layout_marginTop="11dp"
+                        android:textColor="@color/ink" android:textStyle="bold" android:textSize="21sp" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Kenali pemilik usaha dan pembuat aplikasi, foto, serta kontak resminya."
+                        android:layout_marginTop="8dp" android:textColor="@color/soft_ink" android:textSize="13sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@+id/cardAccount"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" android:clickable="true" android:focusable="true"
+                app:cardBackgroundColor="@color/white" app:cardCornerRadius="20dp" app:strokeColor="@color/outline" app:strokeWidth="1dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:padding="21dp" android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="02  ·  AKUN PENGGUNA" android:letterSpacing="0.1" android:textStyle="bold"
+                        android:textSize="10sp" android:textColor="@color/teal" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Pengaturan Akun  →" android:layout_marginTop="11dp"
+                        android:textColor="@color/ink" android:textStyle="bold" android:textSize="21sp" />
+                    <TextView android:id="@+id/tvAccountStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Masuk atau daftar untuk mengelola profil sendiri"
+                        android:layout_marginTop="8dp" android:textColor="@color/soft_ink" android:textSize="13sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="26dp" android:text="Pengaturan akun bersifat pribadi. Halaman About Owner tidak mengubah data pengguna."
+                android:textColor="@color/soft_ink" android:textSize="11sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

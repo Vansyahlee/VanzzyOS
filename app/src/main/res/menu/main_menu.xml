@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/my_orders" android:title="Pesanan saya" app:showAsAction="never" />
+    <item android:id="@+id/profile_page" android:title="Profil" android:icon="@drawable/ic_vanzzy_logo" app:showAsAction="ifRoom" />
+</menu>

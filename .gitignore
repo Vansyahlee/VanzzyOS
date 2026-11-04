@@ -1,0 +1,26 @@
+﻿# Android
+.gradle/
+.idea/
+.kotlin/
+**/build/
+local.properties
+*.iml
+
+# .NET
+**/bin/
+**/obj/
+.vs/
+
+# Local Data
+backend/VanzzyStay.Api/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Security
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.log
