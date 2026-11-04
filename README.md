@@ -1,60 +1,67 @@
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" width="65" alt="Kotlin" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" width="65" alt=".NET" />
+  <p><strong>#Update NewVanzzyOS</strong></p>
 
-  # VanzzyOS
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" width="100" alt="Kotlin" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" width="100" alt=".NET" />
 
-  ### Vanzzy Haven
+  <h1>VanzzyOS</h1>
 
-  **Find Your Place to Stay.**
+  <h3>Vanzzy Haven — Android Accommodation Booking Application</h3>
 
-  Aplikasi Android untuk mencari kost dan penginapan, melihat detail kamar dan fasilitas, serta melakukan pemesanan melalui satu aplikasi.
+  <p>Temukan kost dan penginapan, jelajahi fasilitas kamar, dan lakukan pemesanan dengan mudah melalui aplikasi Android.</p>
 
-  **Kotlin · Android XML · ASP.NET Core (.NET) · REST API**
+  <p>
+    <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
+    <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
+    <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET" />
+    <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C#" />
+  </p>
 </div>
 
 ---
 
-## About
+## Technology Stack
 
-**Vanzzy Haven** adalah aplikasi pencarian dan pemesanan kost berbasis Android. Project **VanzzyOS** dikembangkan menggunakan **Kotlin** untuk aplikasi mobile dan **C# / ASP.NET Core (.NET)** untuk backend.
+| Component | Technology |
+| --- | --- |
+| Android | Kotlin, XML Layout |
+| Backend | C#, ASP.NET Core (.NET 10) |
+| API | REST API |
 
 ## Features
 
 - Pencarian kost dan filter kota
 - Detail kamar, foto, fasilitas, dan harga
-- Akun dan profil pengguna
-- Alur pemesanan kamar *(integrasi backend dalam pengembangan)*
+- Registrasi, login, dan profil pengguna
+- Pemesanan kamar *(integrasi backend dalam pengembangan)*
 
 ## Run Project
 
-**Backend (.NET):**
+**Backend:**
 
 ```powershell
 cd backend/VanzzyStay.Api
 dotnet run
 ```
 
-**Android (Kotlin):** buka project di Android Studio dan jalankan melalui perangkat Android, atau build dengan:
+**Android:**
+
+Buka project di Android Studio atau build melalui terminal:
 
 ```powershell
 .\gradlew.bat :app:assembleDebug
 ```
 
-Untuk pengujian backend lokal melalui HP yang tersambung USB:
+**Koneksi backend melalui USB:**
 
 ```powershell
 adb -d reverse tcp:8086 tcp:8086
 ```
 
-## Update
-
-**#Update NewVanzzyOS** — pengembangan VanzzyOS menjadi **Vanzzy Haven** dengan antarmuka Android yang diperbarui dan integrasi backend .NET.
-
 ---
 
-<div align="center">
-  Made by <a href="https://github.com/Vansyahlee">Vansyahlee</a>
-</div>
+<p align="center">
+  Developed by <a href="https://github.com/Vansyahlee">Vansyahlee</a>
+</p>
